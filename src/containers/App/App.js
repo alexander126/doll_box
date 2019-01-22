@@ -1,25 +1,17 @@
 import React, { Component } from 'react';
-import logo from '../../assets/logo.svg';
+import Header from '../../components/Header';
+import { Image } from 'semantic-ui-react';
 import '../../styles/App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Header />
+        <Image
+          fluid
+          src="https://as1.ftcdn.net/jpg/01/75/56/26/500_F_175562656_4n7SrWRdwPs6guIIhyK7DjqWYVWEu4wo.jpg"
+        />
       </div>
     );
   }
